@@ -9,7 +9,7 @@ Constant: C_16 = L in [teorth/optimizationproblems, page 16a](https://teorth.git
   - a branch-and-bound over δ ∈ [1, 4.9·10⁸] (84 boxes), using a truncated S1 with a proven tail bound;
   - the choice μ = 1/(δ ln δ) bounds F by 2.0587 on [4.9·10⁸, ∞).
 
-  Certificate: `upper_certificate.json`; checker: `verify_c16_upper.py`. The checker uses exact integer ceilings and rational brackets for π, Catalan's constant and log; it imports nothing beyond the Python standard library.
+  Certificate: `upper_certificate.json`; checker: `verify_c16_upper.py`. The checker uses exact integer ceilings and rational brackets for π, Catalan's constant and log. Both checkers need Python 3 and numpy.
 
 Run: `python verify_c16_lower.py lower_certificate.json` and `python verify_c16_upper.py upper_certificate.json`. Both print VERIFIED.
 
